@@ -1,0 +1,220 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  
+}
+
+.header {
+  background-color: #006157;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+
+  height: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1; 
+}
+
+.header .upper-header-left{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.search {
+
+  ---padding: 14px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 28px;
+  background-color: #f3eeee;
+  margin: 24px;
+  
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: 'Lexend', sans-serif;
+  color: #333333;
+  margin-left: var(---padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 600px;
+}
+
+.header .upper-header-right {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 75px;
+}
+
+.upper-header-right-icons {
+    ---padding: 14px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 28px;
+  background-color: none;
+  margin: 14px;
+  
+
+}
+
+.header-logo img {
+    width:50px; /* you can use % */
+    height: auto;
+}
+
+.header-person-name p{
+font-size: x-large;
+font-weight: bolder;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.header .lower-header-left {
+  background-color: white;
+  height: 100%;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: -30px;
+  
+}
+
+.lower-header-logo > img {
+    width:75px; /* you can use % */
+    height: auto;
+    
+}
+
+.lower-header-person-name p{
+font-size: 25px;
+font-weight: bolder;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.lower-header-right {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 10px; */
+  /* padding-left: 75px; */
+}
+
+.lower-header-right-button {
+  background-color: rgb(84, 84, 193);
+  height: 35px;
+  width: 75px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.9s ease-in-out; 
+
+}
+
+.lower-header-right-button:hover {
+ 
+  transform: scale(1.05); /* Scales up the button by 5% */
+  cursor: pointer;
+}
+
+
+
+
+
+
+.sidebar {
+  background-color: #005B94;
+  grid-row: 1 / 5;
+}
+
+.dashboard-icon{
+display: flex;
+align-items: center;
+color: white;
+font-size: 20px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.material-symbols-outlined.dashboard-icon {
+  font-size: 50px;
+  color: white;
+  margin: 10px;
+}
+
+.other-icons {
+  display: flex;
+  flex-direction: column; /* stacks the items vertically in the sidebar */
+  gap: -5px;
+
+}
+
+.sidebar-container {
+display: flex;
+align-items: center;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+transition: background-color 0.2s ease-in-out; 
+}
+
+.sidebar-container:hover {
+  transform: scale(1.05); /* Scales up the button by 5% */
+  cursor: pointer;
+
+}
+
+
+.material-symbols-outlined.sidebar-icon {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+
+.content {
+  background-color: #ffffff;
+  grid-row: 3 / 5;
+}
