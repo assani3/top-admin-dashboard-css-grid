@@ -146,7 +146,6 @@ Right Click index.html
 
 ---
 
-## Screenshots
 
 ### Dashboard Layout
 
